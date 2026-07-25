@@ -447,9 +447,18 @@ footer { text-align:center; margin-top:50px; font-size:13px; color:#c4a882; }
             <p>🔥アイコンをクリックすると出てくるパネルの中身です</p>
         </div>
         <div class="setting-card">
-            <div class="setting-card-head"><div class="si">🔗</div><h3>アーカイブURL / Ingestキー</h3></div>
-            <p>収集した動画の送り先と、送信を許可するための合言葉。管理者から共有してもらいます。</p>
+            <div class="setting-card-head"><div class="si">🔗</div><h3>アーカイブURL</h3></div>
+            <p>収集した動画の送り先となるサイトのアドレスです。下のボタンでコピーして貼り付けてください。</p>
+            <div class="copy-box" style="margin-top:10px;">
+                <code>https://buzz-video-archive-production.up.railway.app</code>
+                <button class="btn-chip dark small" onclick="copyText(this, 'https://buzz-video-archive-production.up.railway.app')">📋 コピー</button>
+            </div>
             <div class="where">最初の1回だけ入力すればOK</div>
+        </div>
+        <div class="setting-card">
+            <div class="setting-card-head"><div class="si">🔑</div><h3>Ingestキー</h3></div>
+            <p>収集した動画の送信を許可するための合言葉（パスワードのようなもの）です。管理者から個別に共有してもらってください。</p>
+            <div class="where">このガイドには載せていません。管理者に直接聞いてください</div>
         </div>
         <div class="setting-card">
             <div class="setting-card-head"><div class="si">📈</div><h3>再生数のしきい値</h3></div>
